@@ -1,0 +1,15 @@
+{
+	"preset": "jquery",
+	// Preset overrides
+	"validateLineBreaks": null,
+	"requireCamelCaseOrUpperCaseIdentifiers": null,
+	"requireCapitalizedComments": null,
+	"maximumLineLength": 500,
+	// Additional preset tightening
+	"requireBlocksOnNewline": true,
+	"requireSpaceBeforeBlockStatements": true,
+	"disallowMixedSpacesAndTabs": true,
+	"excludeFiles": [
+		"Gruntfile.js"
+	]
+}
