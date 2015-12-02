@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2015-12-02T15:43:24.66/html5.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="assets/select2.css">
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome.css">
+    <!--[if ie 7]><link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2015-12-02T15:43:24.66/font-awesome/css/font-awesome-ie7.css" /><![endif]-->
+    <meta charset="utf-8">
+    <meta name="generator" content="ckan 2.5.0a">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage - Dave's books - Groups - CKAN</title>
+    <link rel="shortcut icon" href="assets/ckan.ico"> </head>
+
+<body data-site-root="" data-locale-root="">
+    <div class="hide"><a href="#content">Skip to content</a></div>
+    <header class="account-masthead">
+        <div class="container">
+            <div class="account avatar authed" data-module="me" data-me="b16a5909-4fb2-4482-a052-b85f60e1d463">
+                <ul class="unstyled">
+                    <li>
+                        <a href="Administration - SysAdmin - CKAN.html" title="Sysadmin settings"> <i class="icon-legal" aria-hidden="true"></i>
+                            <span class="text">Admin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="laurent - Users - CKAN.html" class="image" title="View profile">
+                            <img src="assets/d41d8cd98f00b204e9800998ecf8427e.png" class="gravatar" width="22" height="22">
+                            <span class="username">laurent</span>
+                        </a>
+                    </li>
+                    <li class="notifications ">
+                        <a href="Manage - laurent - Users - News Feed - CKAN.html" title="Dashboard (0 new items)"> <i class="icon-dashboard" aria-hidden="true"></i>
+                            <span class="text">Dashboard</span>
+                            <span class="badge">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Manage - laurent - Users - CKAN.html" title="Edit settings"> <i class="icon-cog" aria-hidden="true"></i>
+                            <span class="text">Settings</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Logged Out - CKAN.html" title="Log out"> <i class="icon-signout" aria-hidden="true"></i>
+                            <span class="text">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <header class="navbar navbar-static-top masthead">
+        <div class="debug">Controller : group
+            <br>Action : edit</div>
+        <div class="container">
+            <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <hgroup class="header-image pull-left">
+                <a class="logo" href="Welcome - CKAN.html">
+                    <img src="assets/ckan-logo.png" alt="CKAN" title="CKAN">
+                </a>
+            </hgroup>
+            <div class="nav-collapse collapse">
+                <nav class="section navigation">
+                    <ul class="nav nav-pills">
+                        <li><a href="Datasets - CKAN.html">Datasets</a></li>
+                        <li><a href="Organizations - CKAN.html">Organizations</a></li>
+                        <li><a href="Groups - CKAN.html">Groups</a></li>
+                        <li><a href="About - CKAN.html">About</a></li>
+                    </ul>
+                </nav>
+                <form class="section site-search simple-input" action="/dataset" method="get">
+                    <div class="field">
+                        <label for="field-sitewide-search">Search Datasets</label>
+                        <input id="field-sitewide-search" name="q" placeholder="Search" type="text">
+                        <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div role="main">
+        <div id="content" class="container">
+            <div class="flash-messages"> </div>
+            <div class="toolbar">
+                <ol class="breadcrumb">
+                    <!-- Snippet snippets/home_breadcrumb_item.html start -->
+                    <li class="home"><a href="Welcome - CKAN.html"><i class="icon-home"></i><span> Home</span></a></li>
+                    <!-- Snippet snippets/home_breadcrumb_item.html end -->
+                    <li><a href="Groups - CKAN.html">Groups</a></li>
+                    <li><a href="Dave's books - CKAN.html">Dave's books</a></li>
+                    <li class="active"><a class=" active" href="Manage - Dave's books - Groups - CKAN.html">Manage</a></li>
+                </ol>
+            </div>
+            <div class="row wrapper">
+                <div class="primary span9">
+                    <article class="module">
+                        <header class="module-content page-header">
+                            <div class="content_action"> <a class="btn" href="Dave's books - CKAN.html"><i class="icon-eye-open"></i> View</a> </div>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="Manage - Dave's books - Groups - CKAN.html"><i class="icon-edit"></i> Edit</a></li>
+                                <li><a href="Members - Dave's books - Groups - CKAN.html"><i class="icon-group"></i> Members</a></li>
+                            </ul>
+                        </header>
+                        <div class="module-content">
+                            <h1 class="hide-heading">Edit Group</h1>
+                            <form id="group-edit" class="dataset-form form-horizontal" method="post" data-module="basic-form" enctype="multipart/form-data">
+                                <div class="control-group control-full">
+                                    <label class="control-label" for="field-name">Name</label>
+                                    <div class="controls ">
+                                        <input id="field-name" name="title" value="Dave's books" placeholder="My Group" data-module="slug-preview-target" type="text">
+                                        <div class="slug-preview">
+                                            <strong>
+                                                <span title="This field is required" class="control-required">*</span> URL:</strong>
+                                            <span class="slug-preview-prefix">localhost:5023/group/</span>
+                                            <span class="slug-preview-value">david</span>
+                                            <button class="btn btn-mini">Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;" class="control-group ">
+                                    <label class="control-label" for="field-url">
+                                        <span title="This field is required" class="control-required">*</span> URL</label>
+                                    <div class="controls ">
+                                        <div class="input-prepend">
+                                            <span class="add-on">/group/</span>
+                                            <input id="field-url" name="name" value="david" placeholder="my-group" data-module-prefix="localhost:5023/group/" data-module="slug-preview-slug" data-module-placeholder="&lt;group&gt;" type="text"> </div>
+                                    </div>
+                                </div>
+                                <div class="control-group control-full">
+                                    <label class="control-label" for="field-description">Description</label>
+                                    <div class="controls editor">
+                                        <textarea id="field-description" name="description" cols="20" rows="5" placeholder="A little information about my group...">These are books that David likes.</textarea>
+                                        <span class="editor-info-block">You can use <a data-original-title="Markdown quick reference" href="#markdown" title="" data-target="popover" data-content="&lt;pre&gt;&lt;p&gt;__Bold text__ or _italic text_&lt;/p&gt;&lt;p&gt;# title&lt;br&gt;## secondary title&lt;br&gt;### etc&lt;/p&gt;&lt;p&gt;* list&lt;br&gt;* of&lt;br&gt;* items&lt;/p&gt;&lt;p&gt;http://auto.link.ed/&lt;/p&gt;&lt;/pre&gt;&lt;p&gt;&lt;b&gt;&lt;a href='http://daringfireball.net/projects/markdown/syntax' target='_blank'&gt;Full markdown syntax&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;&lt;p class='muted'&gt;&lt;b&gt;Please note:&lt;/b&gt; HTML tags are stripped out for security reasons&lt;/p&gt;"
+                                            data-html="true">Markdown formatting</a> here</span>
+                                    </div>
+                                </div>
+                                <div class="control-group control-full">
+                                    <label class="control-label" for="field-image-url">Image URL</label>
+                                    <div class="controls ">
+                                        <input id="field-image-url" name="image_url" placeholder="http://example.com/my-image.jpg" type="text"> </div>
+                                </div>
+                                <div class="control-group control-custom">
+                                    <label class="control-label" for="field-extras-0-key">Custom Field</label>
+                                    <div class="controls editor">
+                                        <div class="input-prepend">
+                                            <label for="field-extras-0-key" class="add-on">Key</label>
+                                            <input id="field-extras-0-key" name="extras__0__key" placeholder="" type="text">
+                                            <label for="field-extras-0-value" class="add-on">Value</label>
+                                            <input id="field-extras-0-value" name="extras__0__value" placeholder="" type="text"> </div>
+                                    </div>
+                                </div>
+                                <div class="control-group control-custom">
+                                    <label class="control-label" for="field-extras-1-key">Custom Field</label>
+                                    <div class="controls editor">
+                                        <div class="input-prepend">
+                                            <label for="field-extras-1-key" class="add-on">Key</label>
+                                            <input id="field-extras-1-key" name="extras__1__key" placeholder="" type="text">
+                                            <label for="field-extras-1-value" class="add-on">Value</label>
+                                            <input id="field-extras-1-value" name="extras__1__value" placeholder="" type="text"> </div>
+                                    </div>
+                                </div>
+                                <div class="control-group control-custom">
+                                    <label class="control-label" for="field-extras-2-key">Custom Field</label>
+                                    <div class="controls editor">
+                                        <div class="input-prepend">
+                                            <label for="field-extras-2-key" class="add-on">Key</label>
+                                            <input id="field-extras-2-key" name="extras__2__key" placeholder="" type="text">
+                                            <label for="field-extras-2-value" class="add-on">Value</label>
+                                            <input id="field-extras-2-value" name="extras__2__value" placeholder="" type="text"> </div>
+                                    </div>
+                                </div>
+                                <p class="control-required-message">
+                                    <span class="control-required">*</span> Required field </p>
+                                <div class="form-actions"> <a class="btn btn-danger pull-left" href="#" data-module="confirm-action" data-module-i18n="{&quot;content&quot;: &quot;Are you sure you want to delete this Group?&quot;}">Delete</a>
+                                    <button class="btn btn-primary" name="save" type="submit">Update Group</button>
+                                </div>
+                            </form>
+                        </div>
+                    </article>
+                </div>
+                <aside class="secondary span3">
+                    <!-- Snippet group/snippets/info.html start -->
+                    <div class="module context-info">
+                        <section class="module-content">
+                            <div class="image">
+                                <a href="">
+                                    <img src="assets/placeholder-group.png" alt="david" width="190" height="118"> </a>
+                            </div>
+                            <h1 class="heading"> Dave's books </h1>
+                            <p> These are books that David likes. <a href="About - Dave's books - Groups - CKAN.html">read more</a> </p>
+                        </section>
+                    </div>
+                    <!-- Snippet group/snippets/info.html end -->
+                </aside>
+            </div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="span8 footer-links">
+                    <ul class="unstyled">
+                        <li><a href="About - CKAN.html">About CKAN</a></li>
+                    </ul>
+                    <ul class="unstyled">
+                        <li><a href="http://docs.ckan.org/en/latest/api/">CKAN API</a></li>
+                        <li><a href="http://www.okfn.org/">Open Knowledge Foundation</a></li>
+                        <li>
+                            <a href="http://www.opendefinition.org/okd/">
+                                <img src="assets/od_80x15_blue.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="span4 attribution">
+                    <p>
+                        <strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org/">CKAN</a></p>
+                    <!-- Snippet snippets/language_selector.html start -->
+                    <form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
+                        <label for="field-lang-select">Language</label>
+                        <div style="width: 220px;" id="s2id_field-lang-select" class="select2-container lang-container">
+                            <a href="javascript:void(0)" class="select2-choice" tabindex="-1">
+                                <span id="select2-chosen-1" class="select2-chosen"> English </span>
+                                <abbr class="select2-search-choice-close"></abbr>
+                                <span class="select2-arrow" role="presentation"><b role="presentation"></b></span>
+                            </a>
+                            <label for="s2id_autogen1" class="select2-offscreen">Language</label>
+                            <input id="s2id_autogen1" aria-labelledby="select2-chosen-1" class="select2-focusser select2-offscreen" aria-haspopup="true" role="button" type="text">
+                            <div class="select2-drop select2-display-none lang-dropdown select2-with-searchbox">
+                                <div class="select2-search">
+                                    <label for="s2id_autogen1_search" class="select2-offscreen">Language</label>
+                                    <input placeholder="" id="s2id_autogen1_search" aria-owns="select2-results-1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true"
+                                    aria-autocomplete="list" type="text"> </div>
+                                <ul id="select2-results-1" class="select2-results" role="listbox"> </ul>
+                            </div>
+                        </div>
+                        <select class="select2-offscreen" title="Language" tabindex="-1" id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+                            <option value="/en/group/edit/david" selected="selected"> English </option>
+                            <option value="/pt_BR/group/edit/david"> português (Brasil) </option>
+                            <option value="/ja/group/edit/david"> 日本語 </option>
+                            <option value="/it/group/edit/david"> italiano </option>
+                            <option value="/cs_CZ/group/edit/david"> čeština (Česká republika) </option>
+                            <option value="/ca/group/edit/david"> català </option>
+                            <option value="/es/group/edit/david"> español </option>
+                            <option value="/fr/group/edit/david"> français </option>
+                            <option value="/el/group/edit/david"> Ελληνικά </option>
+                            <option value="/sv/group/edit/david"> svenska </option>
+                            <option value="/sr/group/edit/david"> Српски </option>
+                            <option value="/no/group/edit/david"> Norwegian </option>
+                            <option value="/sk/group/edit/david"> slovenský </option>
+                            <option value="/fi/group/edit/david"> suomi </option>
+                            <option value="/ru/group/edit/david"> русский </option>
+                            <option value="/de/group/edit/david"> Deutsch </option>
+                            <option value="/pl/group/edit/david"> polski </option>
+                            <option value="/nl/group/edit/david"> Nederlands </option>
+                            <option value="/bg/group/edit/david"> български </option>
+                            <option value="/ko_KR/group/edit/david"> 한국어 (대한민국) </option>
+                            <option value="/hu/group/edit/david"> magyar </option>
+                            <option value="/sl/group/edit/david"> slovenščina </option>
+                            <option value="/lv/group/edit/david"> latviešu </option>
+                            <option value="/en_AU/group/edit/david"> English (Australia) </option>
+                            <option value="/is/group/edit/david"> íslenska </option>
+                            <option value="/he/group/edit/david"> עברית </option>
+                            <option value="/es_MX/group/edit/david"> español (México) </option>
+                            <option value="/tr/group/edit/david"> Türkçe </option>
+                            <option value="/vi/group/edit/david"> Tiếng Việt </option>
+                            <option value="/ro/group/edit/david"> română </option>
+                            <option value="/uk_UA/group/edit/david"> українська (Україна) </option>
+                            <option value="/lt/group/edit/david"> lietuvių </option>
+                            <option value="/sw/group/edit/david"> Kiswahili </option>
+                            <option value="/pt_PT/group/edit/david"> português (Portugal) </option>
+                            <option value="/my_MM/group/edit/david"> ဗမာ (မြန်မာ) </option>
+                            <option value="/zh_CN/group/edit/david"> 中文 (中国) </option>
+                            <option value="/my/group/edit/david"> ဗမာ </option>
+                            <option value="/lo/group/edit/david"> ລາວ </option>
+                            <option value="/eu/group/edit/david"> euskara </option>
+                            <option value="/fa_IR/group/edit/david"> فارسی (ایران) </option>
+                            <option value="/km/group/edit/david"> ភាសាខ្មែរ </option>
+                            <option value="/id/group/edit/david"> Bahasa Indonesia </option>
+                            <option value="/ne/group/edit/david"> नेपाली </option>
+                            <option value="/es_AR/group/edit/david"> español (Argentina) </option>
+                            <option value="/mn_MN/group/edit/david"> монгол (Монгол улс) </option>
+                            <option value="/dv/group/edit/david"> ދިވެހިބަސް </option>
+                            <option value="/sr_Latn/group/edit/david"> Srpski (Latinica) </option>
+                            <option value="/th/group/edit/david"> ไทย </option>
+                            <option value="/da_DK/group/edit/david"> dansk (Danmark) </option>
+                            <option value="/en_CA/group/edit/david"> English (Canada) </option>
+                            <option value="/vi_VN/group/edit/david"> Tiếng Việt (Việt Nam) </option>
+                            <option value="/zh_TW/group/edit/david"> 中文 (台湾) </option>
+                            <option value="/hr/group/edit/david"> hrvatski </option>
+                            <option value="/ar/group/edit/david"> العربية </option>
+                            <option value="/sq/group/edit/david"> shqipe </option>
+                        </select>
+                        <button class="btn js-hide" type="submit">Go</button>
+                    </form>
+                    <!-- Snippet snippets/language_selector.html end -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementsByTagName('html')[0].className += ' js';
+
+    </script>
+    <script type="text/javascript" src="assets/jquery.js"></script>
+	<script type="text/javascript" src="assets/bootstrap.js"></script>
+    <script type="text/javascript" src="assets/jed.js"></script>
+    <script type="text/javascript" src="assets/moment-with-locales.js"></script>
+    <script type="text/javascript" src="assets/select2.js"></script>
+    <script type="text/javascript" src="assets/sandbox.js"></script>
+    <script type="text/javascript" src="assets/module.js"></script>
+    <script type="text/javascript" src="assets/pubsub.js"></script>
+    <script type="text/javascript" src="assets/client.js"></script>
+    <script type="text/javascript" src="assets/notify.js"></script>
+    <script type="text/javascript" src="assets/i18n.js"></script>
+    <script type="text/javascript" src="assets/main.js"></script>
+    <script type="text/javascript" src="assets/select-switch.js"></script>
+    <script type="text/javascript" src="assets/slug-preview.js"></script>
+    <script type="text/javascript" src="assets/basic-form.js"></script>
+    <script type="text/javascript" src="assets/confirm-action.js"></script>
+    <script type="text/javascript" src="assets/api-info.js"></script>
+    <script type="text/javascript" src="assets/autocomplete.js"></script>
+    <script type="text/javascript" src="assets/custom-fields.js"></script>
+    <script type="text/javascript" src="assets/related-item.js"></script>
+    <script type="text/javascript" src="assets/data-viewer.js"></script>
+    <script type="text/javascript" src="assets/table-selectable-rows.js"></script>
+    <script type="text/javascript" src="assets/resource-form.js"></script>
+    <script type="text/javascript" src="assets/resource-upload-field.js"></script>
+    <script type="text/javascript" src="assets/resource-reorder.js"></script>
+    <script type="text/javascript" src="assets/resource-view-reorder.js"></script>
+    <script type="text/javascript" src="assets/follow.js"></script>
+    <script type="text/javascript" src="assets/activity-stream.js"></script>
+    <script type="text/javascript" src="assets/dashboard.js"></script>
+    <script type="text/javascript" src="assets/resource-view-embed.js"></script>
+    <script type="text/javascript" src="assets/view-filters.js"></script>
+    <script type="text/javascript" src="assets/resource-view-filters-form.js"></script>
+    <script type="text/javascript" src="assets/resource-view-filters.js"></script>
+    <script type="text/javascript" src="assets/table-toggle-more.js"></script>
+    <script type="text/javascript" src="assets/dataset-visibility.js"></script>
+    <script type="text/javascript" src="assets/media-grid.js"></script>
+    <script type="text/javascript" src="assets/image-upload.js"></script>
+    <span class="select2-hidden-accessible" aria-live="polite" role="status"></span>
+</body>
+
+</html>
