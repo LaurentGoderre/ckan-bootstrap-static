@@ -13,17 +13,17 @@
     <meta name="generator" content="ckan 2.5.0a">
     <title>Welcome - CKAN</title>
     <link rel="shortcut icon" href="assets/ckan.ico"> </head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/css/select2.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
 <body data-site-root="" data-locale-root="">
     <div class="skplink">
         <a class="sr-only sr-only-focusable" href="#content">Skip to content</a>
     </div>
     <header>
-        <section class="container account-masthead">
+        <nav class="account-masthead">
             <h2 class="sr-only">Session Information</h2>
-            <div class="account avatar authed" data-module="me" data-me="b16a5909-4fb2-4482-a052-b85f60e1d463">
-                <ul class="list-unstyled list-inline pull-right">
+            <div class="container account avatar authed" data-module="me" data-me="b16a5909-4fb2-4482-a052-b85f60e1d463">
+                <ul class="nav navbar-nav pull-right">
                     <li>
                         <a href="Administration - SysAdmin - CKAN.html" title="Sysadmin settings"> <i class="fa fa-legal" aria-hidden="true"></i>
                             <span class="text">Admin</span>
@@ -31,7 +31,7 @@
                     </li>
                     <li>
                         <a href="laurent - Users - CKAN.html" class="image" title="View profile">
-                            <img src="assets/d41d8cd98f00b204e9800998ecf8427e_002.png" class="gravatar" width="22" height="22">
+                            <img src="assets/avatar-masthead.png" class="gravatar" width="20" height="20">
                             <span class="username">laurent</span>
                         </a>
                     </li>
@@ -53,44 +53,49 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </nav>
 
-        <section class="container navbar navbar-static-top masthead">
-            <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <hgroup class="header-image pull-left">
-                <a class="logo" href="Welcome - CKAN.html">
-                    <img src="assets/ckan-logo.png" alt="CKAN" title="CKAN">
-                </a>
-            </hgroup>
-            <div class="nav-collapse collapse">
-                <nav class="section navigation">
-                    <ul class="nav nav-pills">
-                        <li><a href="Datasets - CKAN.html">Datasets</a></li>
-                        <li><a href="Organizations - CKAN.html">Organizations</a></li>
-                        <li><a href="Groups - CKAN.html">Groups</a></li>
-                        <li><a href="About - CKAN.html">About</a></li>
-                    </ul>
-                </nav>
-                <form class="section site-search simple-input" action="/dataset" method="get">
-                    <div class="field">
-                        <label for="field-sitewide-search">Search Datasets</label>
-                        <input id="field-sitewide-search" name="q" placeholder="Search" type="text">
-                        <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+        <div class="masthead">
+            <div class="container">
+                <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button" style="display: none;">
+                    <span class="fa fa-bars"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+                <div class="row">
+                    <a class="logo col-md-2" href="Welcome - CKAN.html">
+                        <img src="assets/ckan-logo.png" alt="CKAN" title="CKAN">
+                    </a>
+                    <div class="nav-collapse"><!--collapse-->
+                        <nav class="col-md-7 navigation">
+                            <h2 class="sr-only">Site Menu</h2>
+                            <ul class="nav nav-pills pull-right">
+                                <li><a href="Datasets - CKAN.html">Datasets</a></li>
+                                <li><a href="Organizations - CKAN.html">Organizations</a></li>
+                                <li><a href="Groups - CKAN.html">Groups</a></li>
+                                <li><a href="About - CKAN.html">About</a></li>
+                            </ul>
+                        </nav>
+                        <section class="col-md-3">
+                            <h2 class="sr-only">Search</h2>
+                            <form class="site-search" action="/dataset" method="get">
+                                <div class="input-group">
+                                    <label for="field-sitewide-search" class="sr-only">Search Datasets</label>
+                                    <input id="field-sitewide-search" class="form-control search" name="q" placeholder="Search" type="text">
+                                    <span class="input-group-btn"><button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button></span>
+                                </div>
+                            </form>
+                        </section>
                     </div>
-                </form>
-            </div>
-        </section>
-    </header>
-    <div class="homepage layout-1">
-        <div class="container">
-            <div class="flash-messages">
-                <div class="alert fade in alert-info"> Please <a href="Manage - laurent - Users - CKAN.html">update your profile</a> and add your email address. CKAN uses your email address if you need to reset your password. <a class="close" href="#">×</a></div>
+                </div>
+                <section class="flash-messages">
+                    <h2 class="sr-only">Messages:</h2>
+                    <p class="alert fade in alert-info"> Please <a href="Manage - laurent - Users - CKAN.html">update your profile</a> and add your email address. CKAN uses your email address if you need to reset your password. <a class="close" href="#">×</a></p>
+                </section>
             </div>
         </div>
+    </header>
+    <div class="homepage layout-1">
+
         <!-- Snippet home/layout1.html start -->
         <div role="main" class="hero">
             <div class="container">
@@ -213,43 +218,29 @@
     <footer class="site-footer">
         <div class="container">
             <div class="row">
-                <div class="span8 footer-links">
-                    <ul class="unstyled">
+                <nav class="col-md-8 footer-links">
+                    <ul class="list-unstyled">
                         <li><a href="About - CKAN.html">About CKAN</a></li>
-                    </ul>
-                    <ul class="unstyled">
                         <li><a href="http://docs.ckan.org/en/latest/api/">CKAN API</a></li>
                         <li><a href="http://www.okfn.org/">Open Knowledge Foundation</a></li>
                         <li>
                             <a href="http://www.opendefinition.org/okd/">
-                                <img src="assets/od_80x15_blue.png">
+                                <img src="assets/opendata.png">
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div class="span4 attribution">
+                </nav>
+                <div class="col-md-4 attribution">
                     <p>
-                        <strong>Powered by</strong> <a class="hide-text ckan-footer-logo" href="http://ckan.org/">CKAN</a></p>
+                        <strong>Powered by</strong>
+                        <a class="ckan-footer-logo" href="http://ckan.org/">
+                            <img src="assets/ckan-logo-footer.png" alt="CKAN" />
+                        </a>
+                    </p>
                     <!-- Snippet snippets/language_selector.html start -->
                     <form class="form-inline form-select lang-select" action="/util/redirect" data-module="select-switch" method="POST">
-                        <label for="field-lang-select">Language</label>
-                        <div style="width: 220px;" id="s2id_field-lang-select" class="select2-container lang-container">
-                            <a href="javascript:void(0)" class="select2-choice" tabindex="-1">
-                                <span id="select2-chosen-1" class="select2-chosen"> English </span>
-                                <abbr class="select2-search-choice-close"></abbr>
-                                <span class="select2-arrow" role="presentation"><b role="presentation"></b></span>
-                            </a>
-                            <label for="s2id_autogen1" class="select2-offscreen">Language</label>
-                            <input id="s2id_autogen1" aria-labelledby="select2-chosen-1" class="select2-focusser select2-offscreen" aria-haspopup="true" role="button" type="text">
-                            <div class="select2-drop select2-display-none lang-dropdown select2-with-searchbox">
-                                <div class="select2-search">
-                                    <label for="s2id_autogen1_search" class="select2-offscreen">Language</label>
-                                    <input placeholder="" id="s2id_autogen1_search" aria-owns="select2-results-1" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true"
-                                    aria-autocomplete="list" type="text"> </div>
-                                <ul id="select2-results-1" class="select2-results" role="listbox"> </ul>
-                            </div>
-                        </div>
-                        <select class="select2-offscreen" title="Language" tabindex="-1" id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
+                        <label for="field-lang-select">Language:</label>
+                        <select id="field-lang-select" name="url" data-module="autocomplete" data-module-dropdown-class="lang-dropdown" data-module-container-class="lang-container">
                             <option value="/en/" selected="selected"> English </option>
                             <option value="/pt_BR/"> português (Brasil) </option>
                             <option value="/ja/"> 日本語 </option>
@@ -306,13 +297,18 @@
                             <option value="/ar/"> العربية </option>
                             <option value="/sq/"> shqipe </option>
                         </select>
-                        <button class="btn js-hide" type="submit">Go</button>
+                        <button class="btn btn-default" type="submit">Go</button>
                     </form>
                     <!-- Snippet snippets/language_selector.html end -->
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.min.js"></script>
+    <script type="text/javascript">
+        $('#field-lang-select').select2({theme: "bootstrap"});
+    </script>
 </body>
 
 </html>

@@ -1,13 +1,87 @@
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
 @import '../../bower_components/font-awesome/scss/font-awesome';
+@import '../../bower_components/select2-bootstrap-theme/src/select2-bootstrap';
 
 @import 'variables';
 
 .skplnk {
-	left: 0;
-	position: absolute;
-	text-align: center;
-	top: 10px;
-	width: 100%;
-	z-index: 3;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  width: 100%;
+  z-index: 3;
+}
+
+.account-masthead {
+  background: $account-masthead-background-color;
+
+  .nav {
+    li {
+	  // Avoids the horizontal reflow
+      float: left;
+	}
+
+    a:link,
+  	a:hover,
+  	a:visited {
+      color: $account-masthead-link-color;
+    }
+
+    a:focus,
+	a:hover,
+	 {
+      background: $account-masthead-hover-background-color;
+    }
+  }
+}
+
+.masthead {
+  background: $masthead-background-color;
+
+  .nav-collapse {
+    margin: 7px 0;
+  }
+
+  .site-search {
+    .search {
+      margin: 3px 0;
+    }
+  }
+
+  .nav {
+    a:link,
+  	a:hover,
+  	a:visited {
+      color: $masthead-link-color;
+    }
+
+    a:hover,
+	a:focus {
+      background: $masthead-hover-background-color;
+	}
+  }
+}
+
+.site-footer {
+  background: $footer-background-color;
+  padding-top: 1em;
+
+  a:link,
+  a:hover,
+  a:visited,
+  p,
+  label {
+    color: $footer-text-color;
+  }
+
+  nav {
+    li {
+      padding: .25em 0;
+    }
+  }
+}
+
+.ckan-footer-logo {
+  display: block;
 }
