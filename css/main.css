@@ -8553,11 +8553,16 @@ button.close {
   .account-masthead .navbar-nav li {
     display: inline-block;
     float: none; }
+  .masthead .mobi-menu {
+    float: right;
+    margin-top: 10px; }
   .masthead .nav ul,
   .masthead .nav li {
     width: 100%; } }
 
 @media screen and (min-width: 992px) {
+  .masthead .mobi-menu {
+    display: none; }
   .masthead .nav {
     float: right; }
   .masthead .collapse {
