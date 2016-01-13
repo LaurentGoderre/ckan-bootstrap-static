@@ -1,0 +1,4 @@
+[submodule "before"]
+	path = before
+	url = https://github.com/LaurentGoderre/ckan-bootstrap-static.git
+	branch = before
