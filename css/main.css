@@ -8462,51 +8462,80 @@ button.close {
 .form-inline .select2-container--bootstrap {
   display: inline-block; }
 
-.skplnk {
-  left: 0;
-  position: absolute;
-  text-align: center;
-  top: 10px;
-  width: 100%;
-  z-index: 3; }
-
-.account-masthead {
-  background: #003647; }
-  .account-masthead .nav li {
-    float: left; }
-  .account-masthead .nav a:link,
-  .account-masthead .nav a:hover,
-  .account-masthead .nav a:visited {
-    color: #fff; }
-  .account-masthead .nav a:focus,
-  .account-masthead .nav a:hover {
-    background: #00232e; }
-
-.masthead {
-  background: #005d7a; }
-  .masthead .nav-collapse {
-    margin: 7px 0; }
-  .masthead .site-search .search {
-    margin: 3px 0; }
-  .masthead .nav a:link,
-  .masthead .nav a:hover,
-  .masthead .nav a:visited {
-    color: #fff; }
-  .masthead .nav a:hover,
-  .masthead .nav a:focus {
+@media screen {
+  body, .site-footer {
+    background: #005d7a; }
+  .skplnk {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+    z-index: 3; }
+  .account-masthead {
     background: #003647; }
+    .account-masthead .navbar-nav {
+      float: right;
+      margin: 0; }
+    .account-masthead .nav li {
+      float: left; }
+    .account-masthead .nav a:link,
+    .account-masthead .nav a:hover,
+    .account-masthead .nav a:visited {
+      color: #fff; }
+    .account-masthead .nav a:focus,
+    .account-masthead .nav a:hover {
+      background: #00232e; }
+  .masthead {
+    background: #005d7a; }
+    .masthead .nav-collapse {
+      margin: 7px 0; }
+    .masthead .site-search .search {
+      margin: 3px 0; }
+    .masthead .nav a:link,
+    .masthead .nav a:hover,
+    .masthead .nav a:visited {
+      color: #fff; }
+    .masthead .nav a:hover,
+    .masthead .nav a:focus {
+      background: #003647; }
+  .breadcrumb-masthead,
+  .breadcrumb-masthead .breadcrumb {
+    background: #eee; }
+  .page {
+    background: #fff; }
+    .page .wrapper {
+      padding-bottom: 1em; }
+  .site-footer {
+    padding-top: 1em; }
+    .site-footer a:link,
+    .site-footer a:hover,
+    .site-footer a:visited,
+    .site-footer p,
+    .site-footer label {
+      color: #fff; }
+    .site-footer nav li {
+      padding: .25em 0; }
+  .ckan-footer-logo {
+    display: block; } }
 
-.site-footer {
-  background: #005d7a;
-  padding-top: 1em; }
-  .site-footer a:link,
-  .site-footer a:hover,
-  .site-footer a:visited,
-  .site-footer p,
-  .site-footer label {
-    color: #fff; }
-  .site-footer nav li {
-    padding: .25em 0; }
+@media screen and (max-width: 991px) {
+  .account-masthead .navbar-nav li {
+    display: inline-block;
+    float: none; }
+  .masthead .nav ul,
+  .masthead .nav li {
+    width: 100%; } }
 
-.ckan-footer-logo {
-  display: block; }
+@media screen and (min-width: 992px) {
+  .masthead .nav {
+    float: right; }
+  .masthead .collapse {
+    display: block; }
+  .page {
+    background: #eee;
+    padding: 1em 0; }
+    .page .wrapper {
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+      margin: 0; } }

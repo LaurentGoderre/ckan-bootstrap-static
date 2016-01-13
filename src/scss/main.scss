@@ -4,84 +4,16 @@
 
 @import 'variables';
 
-.skplnk {
-  left: 0;
-  position: absolute;
-  text-align: center;
-  top: 10px;
-  width: 100%;
-  z-index: 3;
+@media screen {
+  @import 'views/screen';
 }
 
-.account-masthead {
-  background: $account-masthead-background-color;
-
-  .nav {
-    li {
-	  // Avoids the horizontal reflow
-      float: left;
-	}
-
-    a:link,
-  	a:hover,
-  	a:visited {
-      color: $account-masthead-link-color;
-    }
-
-    a:focus,
-	a:hover,
-	 {
-      background: $account-masthead-hover-background-color;
-    }
-  }
+// Small view and under
+@media screen and (max-width: $screen-sm-max) {
+  @import 'views/screen-sm-max';
 }
 
-.masthead {
-  background: $masthead-background-color;
-
-  .nav-collapse {
-    margin: 7px 0;
-  }
-
-  .site-search {
-    .search {
-      margin: 3px 0;
-    }
-  }
-
-  .nav {
-    a:link,
-  	a:hover,
-  	a:visited {
-      color: $masthead-link-color;
-    }
-
-    a:hover,
-	a:focus {
-      background: $masthead-hover-background-color;
-	}
-  }
-}
-
-.site-footer {
-  background: $footer-background-color;
-  padding-top: 1em;
-
-  a:link,
-  a:hover,
-  a:visited,
-  p,
-  label {
-    color: $footer-text-color;
-  }
-
-  nav {
-    li {
-      padding: .25em 0;
-    }
-  }
-}
-
-.ckan-footer-logo {
-  display: block;
+// Medium view and over
+@media screen and (min-width: $screen-md-min) {
+  @import 'views/screen-md-min';
 }

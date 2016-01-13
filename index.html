@@ -23,7 +23,7 @@
         <nav class="account-masthead">
             <h2 class="sr-only">Session Information</h2>
             <div class="container account avatar authed" data-module="me" data-me="b16a5909-4fb2-4482-a052-b85f60e1d463">
-                <ul class="nav navbar-nav pull-right">
+                <ul class="nav navbar-nav">
                     <li>
                         <a href="Administration - SysAdmin - CKAN.html" title="Sysadmin settings"> <i class="fa fa-legal" aria-hidden="true"></i>
                             <span class="text">Admin</span>
@@ -65,10 +65,10 @@
                     <a class="logo col-md-2" href="Welcome - CKAN.html">
                         <img src="assets/ckan-logo.png" alt="CKAN" title="CKAN">
                     </a>
-                    <div class="nav-collapse"><!--collapse-->
+                    <div class="nav-collapse collapse">
                         <nav class="col-md-7 navigation">
                             <h2 class="sr-only">Site Menu</h2>
-                            <ul class="nav nav-pills pull-right">
+                            <ul class="nav nav-pills">
                                 <li><a href="Datasets - CKAN.html">Datasets</a></li>
                                 <li><a href="Organizations - CKAN.html">Organizations</a></li>
                                 <li><a href="Groups - CKAN.html">Groups</a></li>
@@ -93,127 +93,37 @@
                 </section>
             </div>
         </div>
-    </header>
-    <div class="homepage layout-1">
+        <div class="breadcrumb-masthead">
+            <nav class="container">
+                <ol class="breadcrumb">
 
-        <!-- Snippet home/layout1.html start -->
-        <div role="main" class="hero">
-            <div class="container">
-                <div class="row row1">
-                    <div class="span6 col1">
-                        <!-- Snippet home/snippets/promoted.html start -->
-                        <div class="module-content box">
-                            <header>
-                                <h1 class="page-heading">Welcome to CKAN</h1>
-                                <p> This is a nice introductory paragraph about CKAN or the site in general. We don't have any copy to go here yet but soon we will </p>
-                            </header>
-                            <section class="featured media-overlay hidden-phone">
-                                <h2 class="media-heading">This is a featured section</h2>
-                                <a class="media-image" href="#">
-                                    <img src="assets/placeholder-420x220.png" alt="Placeholder" width="420" height="220"> </a>
-                            </section>
-                        </div>
-                        <!-- Snippet home/snippets/promoted.html end -->
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <div class="page">
+        <div class="container"><div class="wrapper row">
+            <!-- Snippet home/layout1.html start -->
+            <div role="main" class="hero">
+                <div class="col-md-12 col1">
+                    <!-- Snippet home/snippets/promoted.html start -->
+                    <div class="module-content box">
+                        <header>
+                            <h1 class="page-heading">Welcome to CKAN</h1>
+                            <p> This is a nice introductory paragraph about CKAN or the site in general. We don't have any copy to go here yet but soon we will </p>
+                        </header>
+                        <section class="featured media-overlay hidden-phone">
+                            <h2 class="media-heading">This is a featured section</h2>
+                            <a class="media-image" href="#">
+                                <img src="assets/placeholder-420x220.png" alt="Placeholder" width="420" height="220"> </a>
+                        </section>
                     </div>
-                    <div class="span6 col2">
-                        <!-- Snippet home/snippets/search.html start -->
-                        <div class="module module-search module-narrow module-shallow box">
-                            <form class="module-content search-form" method="get" action="/dataset">
-                                <h3 class="heading">Search data</h3>
-                                <div class="search-input control-group search-giant">
-                                    <input class="search" name="q" autocomplete="off" placeholder="E.g. environment" type="text">
-                                    <button type="submit"> <i class="icon-search"></i>
-                                        <span>Search</span>
-                                    </button>
-                                </div>
-                            </form>
-                            <div class="tags">
-                                <h3>Popular tags</h3> <a class="tag" href="Datasets - CKAN.html?tags=russian">russian</a> <a class="tag" href="Datasets - CKAN.html?tags=Flexible+%E3%82%A1">Flexible ァ</a> <a class="tag" href="Datasets - CKAN.html?tags=tolstoy">tolstoy</a>                                </div>
-                        </div>
-                        <!-- Snippet home/snippets/search.html end -->
-                    </div>
+                    <!-- Snippet home/snippets/promoted.html end -->
                 </div>
             </div>
-        </div>
-        <div role="main">
-            <div class="container">
-                <div class="row row2">
-                    <div class="span6 col1">
-                        <!-- Snippet home/snippets/featured_group.html start -->
-                        <div class="box">
-                            <!-- Snippet snippets/group_item.html start -->
-                            <section class="group-list module module-narrow module-shallow">
-                                <header class="module-heading">
-                                    <a class="module-image" href="Groups - CKAN.html/david">
-                                        <img src="assets/placeholder-group.png" alt="david"> </a>
-                                    <h3 class="media-heading"><a href="Groups - CKAN.html/david">Dave's books</a></h3>
-                                    <p>These are books that David likes. </p>
-                                </header>
-                                <!-- Snippet snippets/package_list.html start -->
-                                <ul class="unstyled dataset-list">
-                                    <!-- Snippet snippets/package_item.html start -->
-                                    <li class="dataset-item module-content">
-                                        <div class="dataset-content">
-                                            <h3 class="dataset-heading"> <a href="#">A Wonderful Story</a> </h3>
-                                            <p class="empty">This dataset has no description</p>
-                                        </div>
-                                    </li>
-                                    <!-- Snippet snippets/package_item.html end -->
-                                    <!-- Snippet snippets/package_item.html start -->
-                                    <li class="dataset-item module-content">
-                                        <div class="dataset-content">
-                                            <h3 class="dataset-heading"> <a href="A Novel By Tolstoy - Datasets - CKAN.html">A Novel By Tolstoy</a> </h3>
-                                            <div>Some test notes A 3rd level heading Some bolded text. Some italicized text. Foreign characters: u with umlaut...</div>
-                                        </div>
-                                    </li>
-                                    <!-- Snippet snippets/package_item.html end -->
-                                </ul>
-                                <!-- Snippet snippets/package_list.html end -->
-                            </section>
-                            <!-- Snippet snippets/group_item.html end -->
-                        </div>
-                        <!-- Snippet home/snippets/featured_group.html end -->
-                    </div>
-                    <div class="span6 col2">
-                        <!-- Snippet home/snippets/featured_organization.html start -->
-                        <div class="box">
-                            <!-- Snippet snippets/organization_item.html start -->
-                            <section class="group-list module module-narrow module-shallow">
-                                <header class="module-heading">
-                                    <a class="module-image" href="">
-                                        <img src="assets/placeholder-organization.png" alt="my-organization"> </a>
-                                    <h3 class="media-heading"><a href="">My Organization</a></h3>
-                                </header>
-                                <!-- Snippet snippets/package_list.html start -->
-                                <ul class="unstyled dataset-list">
-                                    <!-- Snippet snippets/package_item.html start -->
-                                    <li class="dataset-item module-content">
-                                        <div class="dataset-content">
-                                            <h3 class="dataset-heading"> <a href="#">My Public Dataset</a> </h3>
-                                            <p class="empty">This dataset has no description</p>
-                                        </div>
-                                    </li>
-                                    <!-- Snippet snippets/package_item.html end -->
-                                    <!-- Snippet snippets/package_item.html start -->
-                                    <li class="dataset-item module-content">
-                                        <div class="dataset-content">
-                                            <h3 class="dataset-heading">
-                                                <span class="dataset-private label label-inverse"> <i class="icon-lock"></i> Private </span> <a href="#">My Dataset</a> </h3>
-                                            <p class="empty">This dataset has no description</p>
-                                        </div>
-                                    </li>
-                                    <!-- Snippet snippets/package_item.html end -->
-                                </ul>
-                                <!-- Snippet snippets/package_list.html end -->
-                            </section>
-                            <!-- Snippet snippets/organization_item.html end -->
-                        </div>
-                        <!-- Snippet home/snippets/featured_organization.html end -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Snippet home/layout1.html end -->
+
+            <!-- Snippet home/layout1.html end -->
+        </div></div>
     </div>
     <footer class="site-footer">
         <div class="container">
