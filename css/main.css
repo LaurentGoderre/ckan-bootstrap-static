@@ -8502,6 +8502,11 @@ button.close {
   .breadcrumb-masthead,
   .breadcrumb-masthead .breadcrumb {
     background: #eee; }
+  .breadcrumb-masthead .breadcrumb {
+    font-size: 110%;
+    margin-bottom: 0; }
+    .breadcrumb-masthead .breadcrumb .active {
+      font-weight: 800; }
   .page {
     background: #fff; }
     .page .wrapper {
@@ -8534,7 +8539,7 @@ button.close {
     display: block; }
   .page {
     background: #eee;
-    padding: 1em 0; }
+    padding: 0 0 1em; }
     .page .wrapper {
       background: #fff;
       box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);

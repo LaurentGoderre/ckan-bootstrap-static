@@ -75,6 +75,15 @@ body {
   .breadcrumb {
     background: $page-background-color;
   }
+
+  .breadcrumb {
+    font-size: 110%;
+    margin-bottom: 0;
+
+    .active {
+      font-weight: 800;
+    }
+  }
 }
 
 .page {
