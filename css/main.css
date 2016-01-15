@@ -8510,6 +8510,7 @@ button.close {
   .page {
     background: #fff; }
     .page .wrapper {
+      border-radius: 2px;
       padding-bottom: 1em; }
   .site-footer {
     padding-top: 1em; }
@@ -8523,6 +8524,20 @@ button.close {
       padding: .25em 0; }
   .ckan-footer-logo {
     display: block; }
+  .home .jumbotron {
+    background: #fff;
+    border-bottom: 5px solid #ddd;
+    border-radius: 0;
+    position: relative; }
+    .home .jumbotron::before {
+      background: url("../assets/background-tile.png");
+      bottom: 0;
+      content: '';
+      left: 0;
+      opacity: .5;
+      position: absolute;
+      right: 0;
+      top: 0; }
   .module .module-heading {
     margin: 0; }
   .module .module-image {
@@ -8552,5 +8567,5 @@ button.close {
     padding: 0 0 1em; }
     .page .wrapper {
       background: #fff;
-      box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 0 0 4px #ddd;
       margin: 0; } }

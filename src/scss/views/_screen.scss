@@ -90,6 +90,7 @@ body {
   background: $inner-page-background-color;
 
   .wrapper {
+    border-radius: 2px;
     padding-bottom: 1em;
   }
 }
@@ -115,6 +116,26 @@ body {
 
 .ckan-footer-logo {
   display: block;
+}
+
+.home {
+  .jumbotron {
+    background: #fff;
+    border-bottom: 5px solid $inner-page-border-color;
+    border-radius: 0;
+    position: relative;
+
+    &::before {
+      background: url('../assets/background-tile.png');
+      bottom: 0;
+      content: '';
+      left: 0;
+      opacity: .5;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
 }
 
 .module {

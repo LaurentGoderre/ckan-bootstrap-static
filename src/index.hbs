@@ -1,29 +1,35 @@
-<main>
-    <div class="col-md-12 module-content">
-        <h1 class="page-heading">Welcome to CKAN</h1>
-        <p> This is a nice introductory paragraph about CKAN or the site in general. We don't have any copy to go here yet but soon we will </p>
-        <section class="featured media-overlay hidden-phone">
-            <h2 class="media-heading">This is a featured section</h2>
-            <a class="media-image" href="#"> <img src="assets/placeholder-420x220.png" alt="Placeholder" width="420" height="220"> </a>
-        </section>
-    </div>
-    <section class="col-md-12 module module-search">
-        <h2 class="heading">Search data</h2>
-        <form class="module-content search-form" method="get" action="/dataset">
-            <div class="search-input control-group search-giant">
-                <input class="search" name="q" value="" autocomplete="off" placeholder="E.g. environment" type="text">
-                <button type="submit"> <i class="icon-search"></i> <span>Search</span> </button>
+<main class="home">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-12 module-content">
+                <h1 class="page-heading">Welcome to CKAN</h1>
+                <p> This is a nice introductory paragraph about CKAN or the site in general. We don't have any copy to go here yet but soon we will </p>
             </div>
-        </form>
-        <section class="tags">
-            <h3>Popular tags</h3>
-            <ul class="list-unstyled list-inline">
-                <li><a class="tag" href="/dataset?tags=SGRL">SGRL</a></li>
-                <li><a class="tag" href="/dataset?tags=riesgos">riesgos</a></li>
-                <li><a class="tag" href="/dataset?tags=accidente+de+trabajo">accidente de trabajo</a></li>
-            </ul>
-        </section>
-    </section>
+            <section class="col-md-6 featured">
+                <h2 class="media-heading">This is a featured section</h2>
+                <a class="media-image" href="#"> <img src="assets/placeholder-420x220.png" alt="Placeholder" width="420" height="220"> </a>
+            </section>
+            <section class="col-md-6 module module-search">
+                <h2 class="heading">Search data</h2>
+                <form class="module-content search-form" method="get" action="/dataset">
+                    <div class="search-input input-group search-giant">
+                        <input class="search form-control" name="q" value="" autocomplete="off" placeholder="E.g. environment" type="text">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit"> <i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span> </button>
+                        </span>
+                    </div>
+                </form>
+                <section class="tags">
+                    <h3>Popular tags</h3>
+                    <ul class="list-unstyled list-inline">
+                        <li><a class="tag btn btn-default" href="/dataset?tags=SGRL">SGRL <i class="fa fa-tag" aria-hidden="true"></i></a></li>
+                        <li><a class="tag btn btn-default" href="/dataset?tags=riesgos">riesgos <i class="fa fa-tag" aria-hidden="true"></i></a></li>
+                        <li><a class="tag btn btn-default" href="/dataset?tags=accidente+de+trabajo">accidente de trabajo <i class="fa fa-tag" aria-hidden="true"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </div>
     <section class="col-md-6 group-list module module-narrow module-shallow">
         <header class="module-heading row">
             <a href="/group/data-explorer">
