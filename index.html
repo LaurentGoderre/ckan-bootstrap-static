@@ -111,21 +111,90 @@
     </header>
     <div class="page">
         <div class="container"><div class="wrapper row">
-            <div role="main" class="hero">
-    <div class="col-md-12 col1">
-        <div class="module-content box">
-            <header>
-                <h1 class="page-heading">Welcome to CKAN</h1>
-                <p> This is a nice introductory paragraph about CKAN or the site in general. We don't have any copy to go here yet but soon we will </p>
-            </header>
-            <section class="featured media-overlay hidden-phone">
-                <h2 class="media-heading">This is a featured section</h2>
-                <a class="media-image" href="#">
-                    <img src="assets/placeholder-420x220.png" alt="Placeholder" width="420" height="220"> </a>
-            </section>
-        </div>
+            <main>
+    <div class="col-md-12 module-content">
+        <h1 class="page-heading">Welcome to CKAN</h1>
+        <p> This is a nice introductory paragraph about CKAN or the site in general. We don't have any copy to go here yet but soon we will </p>
+        <section class="featured media-overlay hidden-phone">
+            <h2 class="media-heading">This is a featured section</h2>
+            <a class="media-image" href="#"> <img src="assets/placeholder-420x220.png" alt="Placeholder" width="420" height="220"> </a>
+        </section>
     </div>
-</div>
+    <section class="col-md-12 module module-search">
+        <h2 class="heading">Search data</h2>
+        <form class="module-content search-form" method="get" action="/dataset">
+            <div class="search-input control-group search-giant">
+                <input class="search" name="q" value="" autocomplete="off" placeholder="E.g. environment" type="text">
+                <button type="submit"> <i class="icon-search"></i> <span>Search</span> </button>
+            </div>
+        </form>
+        <section class="tags">
+            <h3>Popular tags</h3>
+            <ul class="list-unstyled list-inline">
+                <li><a class="tag" href="/dataset?tags=SGRL">SGRL</a></li>
+                <li><a class="tag" href="/dataset?tags=riesgos">riesgos</a></li>
+                <li><a class="tag" href="/dataset?tags=accidente+de+trabajo">accidente de trabajo</a></li>
+            </ul>
+        </section>
+    </section>
+    <section class="col-md-6 group-list module module-narrow module-shallow">
+        <header class="module-heading row">
+            <a href="/group/data-explorer">
+                <div class="module-image">
+                    <img src="http://farm8.staticflickr.com/7129/7041988029_411d985015_c.jpg" alt="data-explorer">
+                </div>
+                <h3 class="media-heading">Data Explorer Examples</h3>
+            </a>
+            <p>This group contains various real datasets that...</p>
+        </header>
+        <ul class="list-unstyled dataset-list">
+            <li class="dataset-item module-content">
+                <article class="dataset-content">
+                    <h4 class="dataset-heading">
+                        <a href="/dataset/italyregionalaccounts">Italian Regional Public Accounts</a>
+                    </h4>
+                    <p>The Regional Public Accounts (RPA) measure public financial flows at the regional level providing information on...</p>
+                </article>
+            </li>
+            <li class="dataset-item module-content">
+                <article class="dataset-content">
+                    <h4 class="dataset-heading">
+                        <a href="/dataset/newcastle-city-council-payments-over-500">Newcastle City Council: Payments over £500</a>
+                    </h4>
+                    <p>Newcastle City Council spending data over £500. Data is published monthly and shows who was paid, how much was paid,...</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+    <section class="col-md-6 group-list module module-narrow module-shallow">
+        <header class="module-heading row">
+            <a href="/organization/123">
+                <div class="module-image">
+                    <img src="http://demo.ckan.org/uploads/group/2015-10-26-140921.9850531424777524328.jpg" alt="123">
+                </div>
+                <h3 class="media-heading">123</h3>
+            </a>
+        </header>
+        <ul class="list-unstyled dataset-list">
+            <li class="dataset-item module-content">
+                <article class="dataset-content">
+                    <h4 class="dataset-heading">
+                        <a href="/dataset/abc">無線上網熱點列表</a>
+                    </h3>
+                    <p>123 </p>
+                </article>
+            </li>
+            <li class="dataset-item module-content">
+                <article class="dataset-content">
+                    <h4 class="dataset-heading">
+                        <a href="/dataset/104-8">104年8月登革熱噴藥人力及場次</a>
+                    </h3>
+                    <p>104008 </p>
+                </article>
+            </li>
+        </ul>
+    </section>
+</main>
 
         </div></div>
     </div>

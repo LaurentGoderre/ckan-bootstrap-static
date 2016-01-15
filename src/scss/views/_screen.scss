@@ -116,3 +116,23 @@ body {
 .ckan-footer-logo {
   display: block;
 }
+
+.module {
+  .module-heading {
+    margin: 0;
+  }
+
+  .module-image {
+    float: left;
+    margin-right: 1em;
+
+    img {
+      max-height: 50px;
+      max-width: 1000px;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+}

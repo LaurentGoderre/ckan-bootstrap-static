@@ -8522,7 +8522,17 @@ button.close {
     .site-footer nav li {
       padding: .25em 0; }
   .ckan-footer-logo {
-    display: block; } }
+    display: block; }
+  .module .module-heading {
+    margin: 0; }
+  .module .module-image {
+    float: left;
+    margin-right: 1em; }
+    .module .module-image img {
+      max-height: 50px;
+      max-width: 1000px; }
+  .module p {
+    margin: 0; } }
 
 @media screen and (max-width: 991px) {
   .account-masthead .navbar-nav li {
