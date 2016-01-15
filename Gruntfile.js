@@ -2,7 +2,7 @@ module.exports = function (grunt) {
     'use strict';
 
     require('load-grunt-tasks')(grunt, {
-        pattern: ['grunt-*', '!grunt-run-task']
+        pattern: ['grunt-*', '!grunt-run-task', '!grunt-assemble-*']
     });
 
     // Project configuration
@@ -40,6 +40,22 @@ module.exports = function (grunt) {
                     'css/main.css' : 'src/scss/main.scss'
                 }
             }
+        },
+
+        assemble: {
+            options: {
+                assets: '..',
+                plugins: ['grunt-assemble-permalinks'],
+                partials: ['src/includes/**/*.hbs'],
+                layout: ['src/layouts/default.hbs'],
+                data: ['src/data/*.{json,yml}'],
+              },
+              site: {
+                  expand: true,
+                  cwd: 'src',
+                  src: '*.hbs',
+                  dest: '.'
+              }
         }
 
         // concat: {
@@ -101,5 +117,5 @@ module.exports = function (grunt) {
     });
 
     // Default task
-    grunt.registerTask('default', ['copy', 'sass']);
+    grunt.registerTask('default', ['copy', 'sass', 'assemble']);
 };
