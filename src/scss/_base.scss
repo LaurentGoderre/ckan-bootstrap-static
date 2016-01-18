@@ -1,0 +1,35 @@
+@import 'format-labels';
+
+.empty {
+  color: $empty-text-color;
+  font-style: italic;
+}
+
+.filter-list {
+  padding-top: 7px;
+
+  section {
+    display: inline;
+  }
+
+  h4,
+  ul {
+    display: inline;
+  }
+
+  h4,
+  .label {
+    padding-right: 1em;
+  }
+
+  .label {
+    border-radius: 20px;
+    font-size: 100%;
+    margin-bottom: .5em;
+    padding: .7em;
+
+    a {
+      color: inherit;
+    }
+  }
+}
