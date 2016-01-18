@@ -4,6 +4,8 @@
 @import '../../bower_components/font-awesome/scss/font-awesome';
 @import '../../bower_components/select2-bootstrap-theme/src/select2-bootstrap';
 
+@import 'base';
+
 @media screen {
   @import 'views/screen';
 }

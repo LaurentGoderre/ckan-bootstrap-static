@@ -111,100 +111,168 @@
     </header>
     <div class="page">
         <div class="container"><div class="wrapper row">
-            <main class="home">
-    <div class="jumbotron">
-        <div class="row">
-            <div class="col-md-12 module-content">
-                <h1 class="page-heading">Welcome to CKAN</h1>
-                <p> This is a nice introductory paragraph about CKAN or the site in general. We don't have any copy to go here yet but soon we will </p>
+            <main class="primary col-md-9">
+    <h1>Datasets</h1>
+
+    <section class="page_primary_action">
+        <h2 class="sr-only">Actions</h2>
+        <ul class="list-unstyled list-inline">
+            <li>
+                <a class="btn btn-primary" href="Create Dataset - CKAN.html"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Dataset</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="search row">
+        <h2 class="sr-only">Search datasets</h2>
+        <form id="dataset-search-form" class="search-form col-md-12" method="get" data-module="select-switch">
+            <div class="search-input input-group">
+                <input class="search form-control" name="q" autocomplete="off" placeholder="Search datasets..." type="text">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" value="search"> <i class="fa fa-search" aria-hidden="true"></i>
+                        <span class="sr-only">Submit</span>
+                    </button>
+                </span>
             </div>
-            <section class="col-md-6 featured">
-                <h2 class="media-heading">This is a featured section</h2>
-                <a class="media-image" href="#"> <img src="assets/placeholder-420x220.png" alt="Placeholder" width="420" height="220"> </a>
-            </section>
-            <section class="col-md-6">
-                <h2 class="heading">Search data</h2>
-                <form class="search-form" method="get" action="/dataset">
-                    <div class="search-input input-group">
-                        <input class="search form-control" name="q" value="" autocomplete="off" placeholder="E.g. environment" type="text">
+            <span><input name="tags" value="russian" type="hidden"> </span>
+            <div class="form-horizontal">
+                <div class="col-sm-4 form-group pull-right control-order-by">
+                    <label class="control-label" for="field-order-by">Order by</label>
+                    <div class="input-group">
+                        <select class="form-control" id="field-order-by" name="sort">
+                            <option value="score desc, metadata_modified desc" selected="selected">Relevance</option>
+                            <option value="title_string asc">Name Ascending</option>
+                            <option value="title_string desc">Name Descending</option>
+                            <option value="metadata_modified desc">Last Modified</option>
+                        </select>
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="submit"> <i class="fa fa-search" aria-hidden="true"></i><span class="sr-only">Search</span> </button>
+                            <button class="btn btn-default" type="submit">Go</button>
                         </span>
                     </div>
-                </form>
-                <section class="tags">
-                    <h3>Popular tags</h3>
+                </div>
+            </div>
+
+            <section class="filter-list">
+                <h3 class="sr-only">Active Filters</h3>
+                <section>
+                    <h4 class="h5">Tags:</h4>
                     <ul class="list-unstyled list-inline">
-                        <li><a class="tag btn btn-default" href="/dataset?tags=SGRL">SGRL <i class="fa fa-tag" aria-hidden="true"></i></a></li>
-                        <li><a class="tag btn btn-default" href="/dataset?tags=riesgos">riesgos <i class="fa fa-tag" aria-hidden="true"></i></a></li>
-                        <li><a class="tag btn btn-default" href="/dataset?tags=accidente+de+trabajo">accidente de trabajo <i class="fa fa-tag" aria-hidden="true"></i></a></li>
+                        <li class="filtered pill">
+                            russian
+                            <a href="datasets.html" class="remove"><i class="fa fa-remove" aria-hidden="true"></i><span class="sr-only">Remove</span></a>
+                        </li>
                     </ul>
-                </section>
             </section>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <section class="panel panel-default">
-            <header class="panel-heading row">
-                <a href="/group/data-explorer">
-                    <div class="panel-image">
-                        <img src="http://farm8.staticflickr.com/7129/7041988029_411d985015_c.jpg" alt="data-explorer">
-                    </div>
-                    <h3 class="media-heading">Data Explorer Examples</h3>
-                </a>
-                <p>This group contains various real datasets that...</p>
-            </header>
-            <ul class="list-group dataset-list">
-                <li class="list-group-item dataset-item">
-                    <article class="dataset-content">
-                        <h4 class="dataset-heading">
-                            <a href="/dataset/italyregionalaccounts">Italian Regional Public Accounts</a>
-                        </h4>
-                        <p>The Regional Public Accounts (RPA) measure public financial flows at the regional level providing information on...</p>
-                    </article>
-                </li>
-                <li class="list-group-item dataset-item">
-                    <article class="dataset-content">
-                        <h4 class="dataset-heading">
-                            <a href="/dataset/newcastle-city-council-payments-over-500">Newcastle City Council: Payments over £500</a>
-                        </h4>
-                        <p>Newcastle City Council spending data over £500. Data is published monthly and shows who was paid, how much was paid,...</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    </div>
-    <div class="col-md-6">
-        <section class="panel panel-default">
-            <header class="panel-heading row">
-                <a href="/organization/123">
-                    <div class="panel-image">
-                        <img src="http://demo.ckan.org/uploads/group/2015-10-26-140921.9850531424777524328.jpg" alt="123">
-                    </div>
-                    <h3 class="media-heading">123</h3>
-                </a>
-            </header>
-            <ul class="list-group dataset-list">
-                <li class="list-group-item dataset-item">
-                    <article class="dataset-content">
-                        <h4 class="dataset-heading">
-                            <a href="/dataset/abc">無線上網熱點列表</a>
-                        </h3>
-                        <p>123 </p>
-                    </article>
-                </li>
-                <li class="list-group-item dataset-item">
-                    <article class="dataset-content">
-                        <h4 class="dataset-heading">
-                            <a href="/dataset/104-8">104年8月登革熱噴藥人力及場次</a>
-                        </h3>
-                        <p>104008 </p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-    </div>
+        </form>
+    </section>
+    <section class="search-results col-md-12">
+        <h2>2 datasets found</h2>
+        <ul class="dataset-list list-unstyled">
+            <li class="dataset-item">
+                <div class="dataset-content">
+                    <h3 class="dataset-heading"> <a href="#">A Wonderful Story</a> </h3>
+                    <p class="empty">This dataset has no description</p>
+                </div>
+            </li>
+            <li class="dataset-item">
+                <div class="dataset-content">
+                    <h3 class="dataset-heading"> <a href="#">A Novel By Tolstoy</a> </h3>
+                    <div>Some test notes A 3rd level heading Some bolded text. Some italicized text. Foreign characters: u with umlaut ü 66-style quote “ foreign word: thümb Needs...</div>
+                </div>
+                <ul class="dataset-resources list-unstyled list-inline">
+                    <li> <a href="#" class="label" data-format="plain text">plain text</a> </li>
+                    <li> <a href="#" class="label" data-format="json">JSON</a> </li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 </main>
+<nav class="secondary filters col-md-3" role="menu">
+    <h2 class="sr-only">Filters</h2>
+    <section class="panel panel-default">
+        <h2 class="panel-heading h5"> <i class="fa fa-filter" aria-hidden="true"></i> Organizations </h2>
+        <p class="panel-body empty">There are no Organizations that match this search</p>
+        <p></p>
+    </section>
+    <section class="panel panel-default">
+        <h2 class="panel-heading h5"> <i class="fa fa-filter" aria-hidden="true"></i> Groups </h2>
+        <ul class="list-group list-unstyled nav-facet">
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="#" title="">
+                    Dave's books <span class="badge">2</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="datasets.html?groups=roger&amp;tags=russian" title="">
+                    Roger's books <span class="badge">1</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+        </ul>
+        <p></p>
+    </section>
+    <section class="panel panel-default">
+        <h2 class="panel-heading h5"> <i class="fa fa-filter" aria-hidden="true"></i> Tags </h2>
+        <ul class="list-group list-unstyled nav-facet">
+            <li>
+                <a class="list-group-item active" role="menuitemradio" aria-checked="true" href="datasets.html" title="">
+                    russian <span class="badge">2</span>
+                    <span class="sr-only"> items - Remove filter</span>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="datasets.html?tags=russian&amp;tags=Flexible+%E3%82%A1" title="">
+                    Flexible ァ <span class="badge">2</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="datasets.html?tags=tolstoy&amp;tags=russian" title="">
+                    tolstoy <span class="badge">1</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+        </ul>
+        <p></p>
+    </section>
+    <section class="panel panel-default">
+        <h2 class="panel-heading h5"> <i class="fa fa-filter" aria-hidden="true"></i> Formats </h2>
+        <ul class="list-group list-unstyled nav-facet">
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="datasets.html?res_format=plain+text&amp;tags=russian" title="">
+                    plain text <span class="badge">1</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="datasets.html?res_format=JSON&amp;tags=russian" title="">
+                    JSON <span class="badge">1</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+        </ul>
+        <p></p>
+    </section>
+    <section class="panel panel-default">
+        <h2 class="panel-heading h5"> <i class="fa fa-filter" aria-hidden="true"></i> Licenses </h2>
+        <ul class="list-group list-unstyled nav-facet">
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="datasets.html?tags=russian&amp;license_id=other-open" title="">
+                    Other (Open) <span class="badge">1</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+            <li>
+                <a class="list-group-item" role="menuitemradio" aria-checked="false" href="datasets.html?license_id=cc-nc&amp;tags=russian" title="Creative Commons Non-Commercial (Any)">
+                    Creative Commons No... <span class="badge">1</span>
+                    <span class="sr-only"> items - Add filter</span>
+                </a>
+            </li>
+        </ul>
+        <p></p>
+    </section>
+</nav>
 
             <section class="developers col-md-12">
                 <h2 class="sr-only"Developers></h2>

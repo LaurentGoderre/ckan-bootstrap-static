@@ -1,0 +1,58 @@
+.label {
+  &[data-format] {
+    $format-other-background-color: $format-other-background-color;
+  }
+
+  &[data-format=html],
+  &[data-format*=html] {
+    background-color: $format-html-background-color;
+  }
+
+  &[data-format=json],
+  &[data-format*=json] {
+    background-color: $format-json-background-color;
+  }
+
+  &[data-format=xml],
+  &[data-format*=xml] {
+    background-color: $format-xml-background-color;
+  }
+
+  &[data-format=text],
+  &[data-format*=text] {
+    background-color: $format-text-background-color;
+  }
+
+  &[data-format=csv],
+  &[data-format*=csv] {
+    background-color: $format-csv-background-color;
+  }
+
+  &[data-format=xls],
+  &[data-format*=xls] {
+    background-color: $format-xls-background-color;
+  }
+
+  &[data-format=zip],
+  &[data-format*=zip] {
+    background-color: $format-zip-background-color;
+  }
+
+  &[data-format=api],
+  &[data-format*=api] {
+    background-color: $format-api-background-color;
+  }
+
+  &[data-format=pdf],
+  &[data-format*=pdf] {
+    background-color: $format-pdf-backgrounc-color;
+  }
+
+  &[data-format=rdf],
+  &[data-format*=rdf],
+  &[data-format*=nquad],
+  &[data-format*=ntriples],
+  &[data-format*=turtle] {
+    background-color: $format-rdf-background-color;
+  }
+}

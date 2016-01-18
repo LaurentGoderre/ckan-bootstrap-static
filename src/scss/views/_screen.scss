@@ -90,7 +90,7 @@ body {
 
   .wrapper {
     border-radius: 2px;
-    padding-bottom: 1em;
+    padding: 1em 0;
   }
 }
 
@@ -146,7 +146,7 @@ body {
   .panel-image {
     float: left;
     margin-right: 1em;
-    
+
     img {
       max-height: 50px;
       max-width: 1000px;
