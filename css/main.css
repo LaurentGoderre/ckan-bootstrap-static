@@ -8538,15 +8538,15 @@ button.close {
       position: absolute;
       right: 0;
       top: 0; }
-  .module .module-heading {
+  .panel .panel-heading {
     margin: 0; }
-  .module .module-image {
+  .panel .panel-image {
     float: left;
     margin-right: 1em; }
-    .module .module-image img {
+    .panel .panel-image img {
       max-height: 50px;
       max-width: 1000px; }
-  .module p {
+  .panel p {
     margin: 0; } }
 
 @media screen and (max-width: 991px) {

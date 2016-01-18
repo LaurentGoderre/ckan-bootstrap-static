@@ -125,6 +125,7 @@ body {
     border-radius: 0;
     position: relative;
 
+    //TODO: Change the image instead of this hack
     &::before {
       background: url('../assets/background-tile.png');
       bottom: 0;
@@ -138,15 +139,15 @@ body {
   }
 }
 
-.module {
-  .module-heading {
+.panel {
+  .panel-heading {
     margin: 0;
   }
 
-  .module-image {
+  .panel-image {
     float: left;
     margin-right: 1em;
-
+    
     img {
       max-height: 50px;
       max-width: 1000px;
