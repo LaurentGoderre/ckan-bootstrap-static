@@ -13,3 +13,6 @@ $inner-page-background-color: #fff;
 $inner-page-border-color: #ddd;
 $footer-background-color: $primary-background-color;
 $footer-text-color: #fff;
+
+//Bootstrap Overrides
+$brand-primary: $primary-background-color !default;
