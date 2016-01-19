@@ -1,5 +1,14 @@
 @import 'format-labels';
 
+svg {
+  &.white {
+    * {
+      fill: #fff;
+      stroke-width: 0;
+    }
+  }
+}
+
 .empty {
   color: $empty-text-color;
   font-style: italic;
