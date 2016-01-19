@@ -1,14 +1,5 @@
 @import 'format-labels';
 
-svg {
-  &.white {
-    * {
-      fill: #fff;
-      stroke-width: 0;
-    }
-  }
-}
-
 .empty {
   color: $empty-text-color;
   font-style: italic;
@@ -40,5 +31,25 @@ svg {
     a {
       color: inherit;
     }
+  }
+}
+
+.panel {
+  .panel-heading {
+    margin: 0;
+  }
+
+  .panel-image {
+    float: left;
+    margin-right: 1em;
+
+    img {
+      max-height: 50px;
+      max-width: 1000px;
+    }
+  }
+
+  p {
+    margin: 0;
   }
 }

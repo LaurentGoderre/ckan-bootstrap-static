@@ -8492,10 +8492,6 @@ button.close {
 .label[data-format=rdf], .label[data-format*=rdf], .label[data-format*=nquad], .label[data-format*=ntriples], .label[data-format*=turtle] {
   background-color: #0b4498; }
 
-svg.white * {
-  fill: #fff;
-  stroke-width: 0; }
-
 .empty {
   color: #999;
   font-style: italic; }
@@ -8517,6 +8513,19 @@ svg.white * {
     padding: .7em; }
     .filter-list .label a {
       color: inherit; }
+
+.panel .panel-heading {
+  margin: 0; }
+
+.panel .panel-image {
+  float: left;
+  margin-right: 1em; }
+  .panel .panel-image img {
+    max-height: 50px;
+    max-width: 1000px; }
+
+.panel p {
+  margin: 0; }
 
 @media screen {
   body, .site-footer {
@@ -8542,6 +8551,9 @@ svg.white * {
     .account-masthead .nav a:focus,
     .account-masthead .nav a:hover {
       background: #00232e; }
+  svg.white * {
+    fill: #fff;
+    stroke-width: 0; }
   .masthead {
     background: #005d7a; }
     .masthead .nav-collapse {
@@ -8593,17 +8605,7 @@ svg.white * {
       opacity: .5;
       position: absolute;
       right: 0;
-      top: 0; }
-  .panel .panel-heading {
-    margin: 0; }
-  .panel .panel-image {
-    float: left;
-    margin-right: 1em; }
-    .panel .panel-image img {
-      max-height: 50px;
-      max-width: 1000px; }
-  .panel p {
-    margin: 0; } }
+      top: 0; } }
 
 @media screen and (max-width: 991px) {
   .account-masthead .navbar-nav li {
