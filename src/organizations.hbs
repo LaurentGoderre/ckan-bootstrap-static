@@ -1,0 +1,124 @@
+<main class="primary col-md-9">
+    <h1>Organizations</h1>
+
+    <section class="page_primary_action">
+        <h2 class="sr-only">Actions</h2>
+        <ul class="list-unstyled list-inline">
+            <li>
+                <a class="btn btn-primary" href="Create Dataset - CKAN.html"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Dataset</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="search row">
+        <h2 class="sr-only">Search organizations</h2>
+        <form id="organization-search-form" class="search-form col-md-12" method="get" data-module="select-switch">
+            <div class="search-input input-group">
+                <input class="search form-control" name="q" autocomplete="off" placeholder="Search organizations..." type="text">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" value="search"> <i class="fa fa-search" aria-hidden="true"></i>
+                        <span class="sr-only">Submit</span>
+                    </button>
+                </span>
+            </div>
+            <div class="form-horizontal">
+                <div class="col-sm-4 form-group pull-right control-order-by">
+                    <label class="control-label" for="field-order-by">Order by</label>
+                    <div class="input-group">
+                        <select class="form-control" id="field-order-by" name="sort">
+                            <option value="score desc, metadata_modified desc" selected="selected">Relevance</option>
+                            <option value="title_string asc">Name Ascending</option>
+                            <option value="title_string desc">Name Descending</option>
+                        </select>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h2>324 organizations found</h2>
+        <ul class="list-unstyled">
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://demo.ckan.org/uploads/group/2015-10-26-140921.9850531424777524328.jpg" alt=""></div>
+                        <h3 class="col-xs-10">123</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p><strong class="count">2 Datasets</strong></p>
+                    </div>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://270a.info/media/images/270a.svg" alt=""></div>
+                        <h3 class="col-xs-10">270a</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>270a Linked Dataspaces </p>
+                        <p><span class="count">0 Datasets</span></p>
+                    </div>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="assets/placeholder-organization.png" alt=""></div>
+                        <h3 class="col-md-10">2e</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>ckan open platform study </p>
+                        <p><strong class="count">1 Dataset</strong></p>
+                    </div>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="assets/placeholder-organization.png" alt=""></div>
+                        <h3 class="col-xs-10">3do2</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>my company </p>
+                        <p><strong class="count">1 Dataset</strong></p>
+                    </div>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://52north.org/templates/52n-2012/images/52n-logo.gif" alt="52-degree-north"></div>
+                        <h3 class="col-xs-10">52°North GmbH</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>Technical University of Loja (UTPL) is located in Loja. The university was...</p>
+                        <p><span class="count">0 Datasets</span></p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+        <nav>
+            <ul class="pagination pagination-lg pagination-centered">
+                <li class="active"><a href="/organization?sort=&amp;q=&amp;page=1">1</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=2">2</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=3">3</a></li>
+                <li class="disabled"><a href="#">...</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=16">16</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=2">»</a></li>
+            </ul>
+        </nav>
+    </section>
+</main>
+<aside class="secondary col-md-3">
+    <div class="module module-narrow module-shallow">
+        <h2 class="h4"> <i class="fa fa-info-circle" aria-hidden="true"></i> What are Organizations?</h2>
+        <div class="module-content">
+            <p> CKAN Organizations are used to create, manage and publish collections of datasets. Users can have different roles within an Organization, depending on their level of authorisation to create, edit and publish. </p>
+        </div>
+    </div>
+</aside>
