@@ -8599,19 +8599,11 @@ button.close {
   .ckan-footer-logo {
     display: block; }
   .home .jumbotron {
-    background: #fff;
+    background: url("../assets/background-tile.png");
     border-bottom: 5px solid #ddd;
     border-radius: 0;
-    position: relative; }
-    .home .jumbotron::before {
-      background: url("../assets/background-tile.png");
-      bottom: 0;
-      content: '';
-      left: 0;
-      opacity: .5;
-      position: absolute;
-      right: 0;
-      top: 0; } }
+    margin-top: -1em;
+    position: relative; } }
 
 @media screen and (max-width: 991px) {
   .account-masthead .navbar-nav li {

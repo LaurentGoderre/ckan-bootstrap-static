@@ -128,21 +128,10 @@ svg {
 
 .home {
   .jumbotron {
-    background: #fff;
+    background: url('../assets/background-tile.png');
     border-bottom: 5px solid $inner-page-border-color;
     border-radius: 0;
+    margin-top: -1em;
     position: relative;
-
-    //TODO: Change the image instead of this hack
-    &::before {
-      background: url('../assets/background-tile.png');
-      bottom: 0;
-      content: '';
-      left: 0;
-      opacity: .5;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
   }
 }
