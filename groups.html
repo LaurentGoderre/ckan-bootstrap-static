@@ -114,7 +114,120 @@
     </header>
     <div class="page">
         <div class="container"><div class="wrapper row">
-            {{>body}}
+            <main class="primary col-md-9">
+    <h1>Groups</h1>
+
+    <section class="page_primary_action">
+        <h2 class="sr-only">Actions</h2>
+        <ul class="list-unstyled list-inline">
+            <li>
+                <a class="btn btn-primary" href="Create Dataset - CKAN.html"><i class="fa fa-plus-square" aria-hidden="true"></i> Add Dataset</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="search row">
+        <h2 class="sr-only">Search groups</h2>
+        <form id="group-search-form" class="search-form col-md-12" method="get" data-module="select-switch">
+            <div class="search-input input-group">
+                <input class="search form-control" name="q" autocomplete="off" placeholder="Search groups..." title="group" type="text">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" value="search"> <i class="fa fa-search" aria-hidden="true"></i>
+                        <span class="sr-only">Submit</span>
+                    </button>
+                </span>
+            </div>
+            <div class="form-horizontal">
+                <div class="col-sm-4 form-group pull-right control-order-by">
+                    <label class="control-label" for="field-order-by">Order by</label>
+                    <div class="input-group">
+                        <select class="form-control" id="field-order-by" name="sort">
+                            <option value="score desc, metadata_modified desc" selected="selected">Relevance</option>
+                            <option value="title_string asc">Name Ascending</option>
+                            <option value="title_string desc">Name Descending</option>
+                        </select>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">Go</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section>
+        <h2>94 groups found</h2>
+        <ul class="list-unstyled">
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://farm8.staticflickr.com/7129/7041988029_411d985015_c.jpg" alt="data-explorer" class="media-image"></div>
+                        <h3 class="col-xs-10 media-heading">Data Explorer Examples</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>This group contains various real datasets that show CKAN's data previewer in...</p>
+                    </div>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://demo.ckan.org/uploads/group/2015-12-09-154528.312041grupo.png" alt="dados-estatisticos-do-estado-de-sao-paulo" class="media-image"></div>
+                        <h3 class="col-xs-10 media-heading">Dados Estatísticos do Estado de São Paulo</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>Informações socioeconômicas e demográficas dos municípios paulistas. </p>
+                    </div>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://demo.ckan.org/base/images/placeholder-group.png" alt="cvr" class="media-image"></div>
+                        <h3 class="col-xs-10 media-heading">CVR</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>Simple group </p>
+                    </div>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://demo.ckan.org/base/images/placeholder-group.png" alt="domain" class="media-image"></div>
+                        <h3 class="col-xs-10 media-heading">domain</h3>
+                    </a>
+                </article>
+            </li>
+            <li class="org-list-item row">
+                <article>
+                    <a href="#">
+                        <div class="col-xs-2"><img src="http://demo.ckan.org/base/images/placeholder-group.png" alt="ehealth-env" class="media-image"></div>
+                        <h3 class="col-xs-10 media-heading">ehealth Environments</h3>
+                    </a>
+                    <div class="col-xs-10">
+                        <p>EHealth Entornos de medida </p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+        <nav>
+            <ul class="pagination pagination-lg pagination-centered">
+                <li class="active"><a href="/organization?sort=&amp;q=&amp;page=1">1</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=2">2</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=3">3</a></li>
+                <li class="disabled"><a href="#">...</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=16">16</a></li>
+                <li><a href="/organization?sort=&amp;q=&amp;page=2">»</a></li>
+            </ul>
+        </nav>
+    </section>
+</main>
+<aside class="secondary col-md-3">
+    <h2 class="h4"> <i class="fa fa-info-circle" aria-hidden="true"></i> What are Groups?</h2>
+    <p>You can use CKAN Groups to create and manage collections of datasets. This could be to catalogue datasets for a particular project or team, or on a particular theme, or as a very simple way to help people find and search your own published datasets. </p>
+</aside>
+
             <section class="developers col-md-12">
                 <h2 class="sr-only"Developers></h2>
                 <p><small> You can also access this registry using the <a href="#">API</a> (see <a href="http://docs.ckan.org/en/latest/api/">API Docs</a>). </small></p>
