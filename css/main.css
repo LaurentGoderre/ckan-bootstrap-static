@@ -8529,8 +8529,6 @@ button.close {
 
 .org-list-item {
   margin-top: 1em; }
-  .org-list-item h3 {
-    margin-top: 0; }
   .org-list-item img {
     max-height: 100px;
     max-width: 100px; }
