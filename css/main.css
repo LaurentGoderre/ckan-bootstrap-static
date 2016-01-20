@@ -8517,10 +8517,10 @@ button.close {
 .panel .panel-heading {
   margin: 0; }
 
-.panel .panel-image {
+.panel .panel-heading-image {
   float: left;
   margin-right: 1em; }
-  .panel .panel-image img {
+  .panel .panel-heading-image img {
     max-height: 50px;
     max-width: 1000px; }
 
