@@ -1,8 +1,18 @@
 @import 'format-labels';
 
+.btn-admin {
+  @include button-variant($btn-admin-color, $btn-admin-bg, $btn-admin-border);
+}
+
 .empty {
   color: $empty-text-color;
   font-style: italic;
+}
+
+main {
+  .nav {
+    margin-bottom: 1em;
+  }
 }
 
 .filter-list {
@@ -60,5 +70,11 @@
   img {
     max-height: 100px;
     max-width: 100px;
+  }
+}
+
+.resources {
+  h3 {
+    display: inline-block;
   }
 }

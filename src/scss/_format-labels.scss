@@ -56,3 +56,72 @@
     background-color: $format-rdf-background-color;
   }
 }
+
+@mixin ckan-icon-background-position ($offset) {
+  $width: 32px;
+  $height: 35px;
+  $x: -$width;
+  $y: -63px;
+
+  width: $width;
+  height: $height;
+  background-position: ($x * $offset) $y;
+}
+
+.format-label {
+  @include ckan-icon-background-position(0);
+  background: url('../assets/sprite-resource-icons.png') no-repeat 0 0;
+  margin-left: .5em;
+  position: absolute;
+  text-indent: -9000px;
+
+  &[data-format=rdf],
+  &[data-format*=rdf] {
+    @include ckan-icon-background-position(1);
+  }
+
+  &[data-format=pdf],
+  &[data-format*=pdf] {
+    @include ckan-icon-background-position(2);
+  }
+
+  &[data-format=api],
+  &[data-format*=api] {
+    @include ckan-icon-background-position(3);
+  }
+
+  &[data-format=zip],
+  &[data-format*=zip] {
+    @include ckan-icon-background-position(4);
+  }
+
+  &[data-format=xls],
+  &[data-format*=xls] {
+    @include ckan-icon-background-position(5);
+  }
+
+  &[data-format=csv],
+  &[data-format*=csv] {
+    @include ckan-icon-background-position(6);
+  }
+
+  &[data-format=txt],
+  &[data-format*=txt] {
+    @include ckan-icon-background-position(7);
+  }
+
+  &[data-format=xml],
+  &[data-format*=xml] {
+    @include ckan-icon-background-position(8);
+  }
+
+  &[data-format=json],
+  &[data-format*=json] {
+    @include ckan-icon-background-position(9);
+  }
+
+  &[data-format=html],
+  &[data-format*=html] {
+    @include ckan-icon-background-position(10);
+  }
+}

@@ -8492,9 +8492,98 @@ button.close {
 .label[data-format=rdf], .label[data-format*=rdf], .label[data-format*=nquad], .label[data-format*=ntriples], .label[data-format*=turtle] {
   background-color: #0b4498; }
 
+.format-label {
+  width: 32px;
+  height: 35px;
+  background-position: 0px -63px;
+  background: url("../assets/sprite-resource-icons.png") no-repeat 0 0;
+  margin-left: .5em;
+  position: absolute;
+  text-indent: -9000px; }
+  .format-label[data-format=rdf], .format-label[data-format*=rdf] {
+    width: 32px;
+    height: 35px;
+    background-position: -32px -63px; }
+  .format-label[data-format=pdf], .format-label[data-format*=pdf] {
+    width: 32px;
+    height: 35px;
+    background-position: -64px -63px; }
+  .format-label[data-format=api], .format-label[data-format*=api] {
+    width: 32px;
+    height: 35px;
+    background-position: -96px -63px; }
+  .format-label[data-format=zip], .format-label[data-format*=zip] {
+    width: 32px;
+    height: 35px;
+    background-position: -128px -63px; }
+  .format-label[data-format=xls], .format-label[data-format*=xls] {
+    width: 32px;
+    height: 35px;
+    background-position: -160px -63px; }
+  .format-label[data-format=csv], .format-label[data-format*=csv] {
+    width: 32px;
+    height: 35px;
+    background-position: -192px -63px; }
+  .format-label[data-format=txt], .format-label[data-format*=txt] {
+    width: 32px;
+    height: 35px;
+    background-position: -224px -63px; }
+  .format-label[data-format=xml], .format-label[data-format*=xml] {
+    width: 32px;
+    height: 35px;
+    background-position: -256px -63px; }
+  .format-label[data-format=json], .format-label[data-format*=json] {
+    width: 32px;
+    height: 35px;
+    background-position: -288px -63px; }
+  .format-label[data-format=html], .format-label[data-format*=html] {
+    width: 32px;
+    height: 35px;
+    background-position: -320px -63px; }
+
+.btn-admin {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: #df8a13; }
+  .btn-admin:focus, .btn-admin.focus {
+    color: #fff;
+    background-color: #c77c11;
+    border-color: #694109; }
+  .btn-admin:hover {
+    color: #fff;
+    background-color: #c77c11;
+    border-color: #a6670e; }
+  .btn-admin:active, .btn-admin.active,
+  .open > .btn-admin.dropdown-toggle {
+    color: #fff;
+    background-color: #c77c11;
+    border-color: #a6670e; }
+    .btn-admin:active:hover, .btn-admin:active:focus, .btn-admin:active.focus, .btn-admin.active:hover, .btn-admin.active:focus, .btn-admin.active.focus,
+    .open > .btn-admin.dropdown-toggle:hover,
+    .open > .btn-admin.dropdown-toggle:focus,
+    .open > .btn-admin.dropdown-toggle.focus {
+      color: #fff;
+      background-color: #a6670e;
+      border-color: #694109; }
+  .btn-admin:active, .btn-admin.active,
+  .open > .btn-admin.dropdown-toggle {
+    background-image: none; }
+  .btn-admin.disabled:hover, .btn-admin.disabled:focus, .btn-admin.disabled.focus, .btn-admin[disabled]:hover, .btn-admin[disabled]:focus, .btn-admin[disabled].focus,
+  fieldset[disabled] .btn-admin:hover,
+  fieldset[disabled] .btn-admin:focus,
+  fieldset[disabled] .btn-admin.focus {
+    background-color: #ec971f;
+    border-color: #df8a13; }
+  .btn-admin .badge {
+    color: #ec971f;
+    background-color: #fff; }
+
 .empty {
   color: #999;
   font-style: italic; }
+
+main .nav {
+  margin-bottom: 1em; }
 
 .filter-list {
   padding-top: 7px; }
@@ -8532,6 +8621,9 @@ button.close {
   .org-list-item img {
     max-height: 100px;
     max-width: 100px; }
+
+.resources h3 {
+  display: inline-block; }
 
 @media screen {
   body, .site-footer {
