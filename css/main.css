@@ -8541,6 +8541,77 @@ button.close {
     height: 35px;
     background-position: -320px -63px; }
 
+.activity .item-body {
+  margin-left: 4em; }
+
+.activity h3 {
+  display: inline; }
+
+.activity time {
+  font-style: italic;
+  white-space: nowrap; }
+
+.activity .item {
+  margin: 2em 0; }
+  .activity .item .fa {
+    background-color: #999;
+    border-radius: 40px;
+    color: #fff;
+    float: left;
+    padding: 1em; }
+  .activity .item.failure .fa {
+    background-color: #b95252; }
+  .activity .item.success .fa {
+    background-color: #69a67a; }
+  .activity .item.added-tag .fa {
+    background-color: #6995a6; }
+  .activity .item.changed-group .fa {
+    background-color: #767dce; }
+  .activity .item.changed-package .fa {
+    background-color: #8c76ce; }
+  .activity .item.changed-package_extra .fa {
+    background-color: #769ace; }
+  .activity .item.changed-resource .fa {
+    background-color: #aa76ce; }
+  .activity .item.changed-user .fa {
+    background-color: #76b8ce; }
+  .activity .item.changed-organization .fa {
+    background-color: #699fa6; }
+  .activity .item.deleted-group .fa {
+    background-color: #b95252; }
+  .activity .item.deleted-package .fa {
+    background-color: #b97452; }
+  .activity .item.deleted-package_extra .fa {
+    background-color: #b95274; }
+  .activity .item.deleted-resource .fa {
+    background-color: #b99752; }
+  .activity .item.deleted-organization .fa {
+    background-color: #b95297; }
+  .activity .item.new-group .fa {
+    background-color: #69a67a; }
+  .activity .item.new-package .fa {
+    background-color: #69a68e; }
+  .activity .item.new-package_extra .fa {
+    background-color: #6ca669; }
+  .activity .item.new-resource .fa {
+    background-color: #81a669; }
+  .activity .item.new-user .fa {
+    background-color: #69a6a3; }
+  .activity .item.new-organization .fa {
+    background-color: #81a669; }
+  .activity .item.removed-tag .fa {
+    background-color: #b95297; }
+  .activity .item.deleted-related-item .fa {
+    background-color: #b9b952; }
+  .activity .item.follow-dataset .fa {
+    background-color: #767dce; }
+  .activity .item.follow-user .fa {
+    background-color: #8c76ce; }
+  .activity .item.new-related-item .fa {
+    background-color: #95a669; }
+  .activity .item.follow-group .fa {
+    background-color: #8ba669; }
+
 .logo object,
 .ckan-footer-logo object {
   pointer-events: none; }

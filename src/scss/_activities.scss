@@ -1,0 +1,130 @@
+.activity {
+  .item-body {
+    margin-left: 4em;
+  }
+
+  h3 {
+    display: inline;
+  }
+
+  time {
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .item {
+    margin: 2em 0;
+
+    .fa {
+      background-color: $activity-blank-color;
+      border-radius: 40px;
+      color: $activity-text-color;
+      float: left;
+      padding: 1em;
+    }
+
+    &.failure .fa {
+      background-color: $activity-delete-color;
+    }
+
+    &.success .fa {
+      background-color: $activity-new-color;
+    }
+
+    &.added-tag .fa {
+      background-color: adjust-hue($activity-new-color, 60);
+    }
+
+    &.changed-group .fa {
+      background-color: $activity-modify-color;
+    }
+
+    &.changed-package .fa {
+      background-color: adjust-hue($activity-modify-color, 20);
+    }
+
+    &.changed-package_extra .fa {
+      background-color: adjust-hue($activity-modify-color, -20);
+    }
+
+    &.changed-resource .fa {
+      background-color: adjust-hue($activity-modify-color, 40);
+    }
+
+    &.changed-user .fa {
+      background-color: adjust-hue($activity-modify-color, -40);
+    }
+
+    &.changed-organization .fa {
+      background-color: adjust-hue($activity-new-color, 50);
+    }
+
+    &.deleted-group .fa {
+      background-color: $activity-delete-color;
+    }
+
+    &.deleted-package .fa {
+      background-color: adjust-hue($activity-delete-color, 20);
+    }
+
+    &.deleted-package_extra .fa {
+      background-color: adjust-hue($activity-delete-color, -20);
+    }
+
+    &.deleted-resource .fa {
+      background-color: adjust-hue($activity-delete-color, 40);
+    }
+
+    &.deleted-organization .fa {
+      background-color: adjust-hue($activity-delete-color, -40);
+    }
+
+    &.new-group .fa {
+      background-color: $activity-new-color;
+    }
+
+    &.new-package .fa {
+      background-color: adjust-hue($activity-new-color, 20);
+    }
+
+    &.new-package_extra .fa {
+      background-color: adjust-hue($activity-new-color, -20);
+    }
+
+    &.new-resource .fa {
+      background-color: adjust-hue($activity-new-color, -40);
+    }
+
+    &.new-user .fa {
+      background-color: adjust-hue($activity-new-color, 40);
+    }
+
+    &.new-organization .fa {
+      background-color: adjust-hue($activity-new-color, -40);
+    }
+
+    &.removed-tag .fa {
+      background-color: adjust-hue($activity-delete-color, -40);
+    }
+
+    &.deleted-related-item .fa {
+      background-color: adjust-hue($activity-delete-color, 60);
+    }
+
+    &.follow-dataset .fa {
+      background-color: $activity-neutral-color;
+    }
+
+    &.follow-user .fa {
+      background-color: adjust-hue($activity-neutral-color, 20);
+    }
+
+    &.new-related-item .fa {
+      background-color: adjust-hue($activity-new-color, -60);
+    }
+
+    &.follow-group .fa {
+      background-color: adjust-hue($activity-new-color, -50);
+    }
+  }
+}
