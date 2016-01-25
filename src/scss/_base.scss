@@ -1,5 +1,12 @@
 @import 'format-labels';
 
+.logo,
+.ckan-footer-logo {
+  object {
+    pointer-events: none;
+  }
+}
+
 .btn-admin {
   @include button-variant($btn-admin-color, $btn-admin-bg, $btn-admin-border);
 }

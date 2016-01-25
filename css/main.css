@@ -8541,6 +8541,10 @@ button.close {
     height: 35px;
     background-position: -320px -63px; }
 
+.logo object,
+.ckan-footer-logo object {
+  pointer-events: none; }
+
 .btn-admin {
   color: #fff;
   background-color: #ec971f;
