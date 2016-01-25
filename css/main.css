@@ -8649,9 +8649,6 @@ main .nav {
     .account-masthead .nav a:focus,
     .account-masthead .nav a:hover {
       background: #00232e; }
-  svg.white * {
-    fill: #fff;
-    stroke-width: 0; }
   .masthead {
     background: #005d7a; }
     .masthead .nav-collapse {

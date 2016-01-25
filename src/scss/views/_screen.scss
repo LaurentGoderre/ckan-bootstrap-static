@@ -42,15 +42,6 @@ body {
   }
 }
 
-svg {
-  &.white {
-    * {
-      fill: #fff;
-      stroke-width: 0;
-    }
-  }
-}
-
 .masthead {
   background: $masthead-background-color;
 
