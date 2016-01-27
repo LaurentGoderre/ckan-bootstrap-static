@@ -8688,7 +8688,10 @@ main .nav {
     max-height: 50px;
     max-width: 1000px; }
 
-.panel p {
+.login-form {
+  margin-top: 2em; }
+
+.filters p {
   margin: 0; }
 
 .org-list-item {
